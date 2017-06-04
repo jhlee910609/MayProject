@@ -19,9 +19,9 @@ import android.widget.Toast;
  */
 public class WebViewFrag extends Fragment implements View.OnClickListener {
 
-    WebView webView;
-    Button btnGo, btnBack, btnFront;
-    EditText editText;
+    private WebView webView;
+    private Button btnGo, btnBack, btnFront;
+    private EditText editText;
 
 
     public WebViewFrag() {

@@ -7,5 +7,5 @@
     <color name="cal_preview">#FFFFFCC9</color>
     <color name="background_color">#f9d4e1</color>
     <color name="button_stroke">#FF000000</color>
-    <color name="tab_indicator">#FFFF0057</color>
+    <color name="tab_indicator">#009dff</color>
 </resources>

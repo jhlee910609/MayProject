@@ -17,7 +17,7 @@ public class Loader {
 
         for (int i = 1; i <= 13; i++) {
             Img_data data = new Img_data();
-            data.setTitle("IU 앨범" + "[ " + i + " ]");
+            data.setTitle("IU 앨범 " + "[ " + i + " ]");
             data.setImage("iu_" + i, context);
             datas.add(data);
 

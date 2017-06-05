@@ -2,6 +2,18 @@
     <string name="app_name">Practicing examples in may</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>\
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unit_prompt">단위를 고르시오.</string>
+
+    <string-array name="unit_array">
+        <item>mm</item>
+        <item>cm</item>
+        <item>m</item>
+        <item>km</item>
+
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps_fragment">Map</string>
 
 </resources>

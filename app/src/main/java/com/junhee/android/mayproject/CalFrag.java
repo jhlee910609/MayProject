@@ -51,8 +51,8 @@ public class CalFrag extends Fragment implements View.OnClickListener {
         view.findViewById(R.id.btnMulti).setOnClickListener(this);
         view.findViewById(R.id.btnDiv).setOnClickListener(this);
         view.findViewById(R.id.btnClear).setOnClickListener(this);
+        // 결과창 초기화
         init();
-
 
         return view;
     }

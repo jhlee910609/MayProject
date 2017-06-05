@@ -49,8 +49,8 @@ public class WebViewFrag extends Fragment implements View.OnClickListener {
         webView.setWebChromeClient(new WebChromeClient());
 
         // 3. uri 호출하기
-        String temp = editText.getText().toString();
-        loadUrl(temp);
+        // String temp = editText.getText().toString();
+        // loadUrl(temp);
         // ----- making clickListener on the buttons -------
         btnFront.setOnClickListener(this);
         btnGo.setOnClickListener(this);

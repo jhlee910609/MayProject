@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/snorlax.png",
+        "source": "/Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/res/mipmap-xxhdpi/snorlax.png"
+    },
+    {
+        "merged": "/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/charmander.png",
+        "source": "/Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/res/mipmap-xxhdpi/charmander.png"
+    },
+    {
+        "merged": "/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png",
+        "source": "/Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/pikachu.png",
+        "source": "/Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/res/mipmap-xxhdpi/pikachu.png"
+    }
+]

@@ -2,76 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/JunHee/.android/build-cache/cd0c086bcee26317cf3ef572bbc54601327ed135/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
-        <dex dex="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/pre-dexed/debug/classes_f0b760bbab381c7944ccba94285626262f85170a.jar" />
+        sha1="6c76cedd57f97c197b49ff9acf31d234dd2915dd">
+        <dex dex="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_43b3c89bd749bd4b5dc7c259ee2ffad17d7c8e58/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/JunHee/.android/build-cache/047e0dc0d0ff10d5299a3d3f4b97b0d98e78169f/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="0c6924cbba8248329a8c58ead6a380efe7eee76e">
-        <dex dex="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/pre-dexed/debug/classes_c121cc4558b5a4c6497f5e732ceb41ce487702dd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/JunHee/.android/build-cache/6a8dd01a9e0c39e3e4b2dc1364fc09828bb62588/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
-        <dex dex="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/pre-dexed/debug/classes_2dc29606b6e4210b8040a2eb3b3ba50ae97f3fa6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/JunHee/.android/build-cache/9f40d147ca0f386ea5672f987944b3de2862ed8e/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
-        <dex dex="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/pre-dexed/debug/classes_d948d24fc73b381f3ff7287124005ef50397dcb1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/JunHee/.android/build-cache/d4949e8fa29aa171ecee02d140e7028936b94b8d/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="4d7184a651c5975b49928ce7c76175d491ee7a5e">
-        <dex dex="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/pre-dexed/debug/classes_5ff2dfa7e3307a25780a23db476d790cd93250ae.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/JunHee/.android/build-cache/0165549fc5dd381f4c1c08ddcb8a696dc264f180/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="9024225796c3f11342ef6a4a99439f2f988bafb0">
-        <dex dex="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/pre-dexed/debug/classes_fd2049ea590ba0d731dcaef24fdf6e7d805d169b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/JunHee/.android/build-cache/e1467604f51f46c3ea7d1f92a3eb58dd8b992d63/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="1172091167cff5873cbcccad4c0e08ec9e3240de">
-        <dex dex="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/pre-dexed/debug/classes_08b0768fab98c9644f689769419d3b2443244876.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/JunHee/.android/build-cache/1c09da48868f67655f628f0bbadac8f7e3de6a82/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="9b775d7b643397da3ab57e62ae8abb74a9cc9a83">
-        <dex dex="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/pre-dexed/debug/classes_a7435ae0b0d456d9c213e44327b71c85b3531f8e.jar" />
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_415b2f4e72f99c0be99f8a7d249d543e05547189/classes.dex" />
     </item>
 
 </items>

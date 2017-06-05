@@ -6,10 +6,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -17,10 +20,13 @@ import android.widget.TextView;
  */
 public class UnitChangerFrag extends Fragment {
     private Spinner before, after;
-    private TextView result_txt;
-    private EditText input_editor;
+    TextView result_txt;
+    EditText input_editor;
     private String units[] = {"mm", "cm", "m", "km"};
+    double beforeUnit = 0;
+    double afterUnit = 0;
     View view;
+    Button btnDoCal;
 
 
     public UnitChangerFrag() {
@@ -29,17 +35,11 @@ public class UnitChangerFrag extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.activity_unit_changer_frag, container, false);
-        before = (Spinner) view.findViewById(R.id.spin_before);
-        after = (Spinner) view.findViewById(R.id.spin_after);
-        input_editor = (EditText) view.findViewById(R.id.edit_input);
-        result_txt = (TextView) view.findViewById(R.id.resutl_txt);
-
-
-
+        init();
 
 
         //TODO 예제랑 달라 문제 발생할지도 모름
@@ -52,43 +52,55 @@ public class UnitChangerFrag extends Fragment {
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         after.setAdapter(adapter2);
 
+        selectedListener();
+        result_txt.setText(calculate() + "");
         return view;
+    }
 
-        // 1. before에서 아이템 선택
-        // ====== before.setOnItemSelectedListener(); ======
-        // 1.1 이때 선택한 아이템의 포지션 저장
+    // 단위 변환 계산을 실행한다.
+    private double calculate() {
+        int tempInput = Integer.parseInt(input_editor.getText().toString());
+        double result = beforeUnit * tempInput / afterUnit;
+        return result;
+    }
 
-        // ====== after.setOnItemSelectedListener(); =======
-        // 2. after 아이템
-        // 2,1 이때 선택한 아이템의 포지션 저장
+    // 변수와 뷰를 연결하는 초기화를 한다.
+    public void init() {
+        before = (Spinner) view.findViewById(R.id.spin_before);
+        after = (Spinner) view.findViewById(R.id.spin_after);
+        input_editor = (EditText) view.findViewById(R.id.edit_input);
+        result_txt = (TextView) view.findViewById(R.id.resutl_txt);
+        btnDoCal = (Button) view.findViewById(R.id.btnDoCal);
+    }
 
-        // ===== doCalculate (); ======
-        // 3. 계산 로직 작성
-        // 3.1 before.getselecteditempos과 after.getselecteditempos 비교
-        // 3.2  == 그대로 출력
-        // 3.3 > 곱하기로
-        // 3.4 * 로
+    // 스피너의 .setOnItemSelectedListener 를 관리한다
+    public void selectedListener() {
 
-        // 3. textView에 띄운다
-
-
-
-/*
         before.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                switch (position){
+                switch (position) {
                     case 0:
-                        beforePos = 0;
+                        beforeUnit = 1;
                         break;
 
+                    case 1:
+                        beforeUnit = 0.1;
+                        break;
 
+                    case 2:
+                        beforeUnit = 0.001;
+                        break;
+
+                    case 3:
+                        beforeUnit = 0.0000001;
+                        break;
                 }
-
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
+                Toast.makeText(parent.getContext(), "단위를 지정해주세요.", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -96,27 +108,31 @@ public class UnitChangerFrag extends Fragment {
         after.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                switch (position) {
+                    case 0:
+                        afterUnit = 1;
+                        break;
+
+                    case 1:
+                        afterUnit = 10;
+                        break;
+
+                    case 2:
+                        afterUnit = 1000;
+                        break;
+
+                    case 3:
+                        afterUnit = 1000000;
+                        break;
+                }
 
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
+                Toast.makeText(parent.getContext(), "단위를 지정해주세요.", Toast.LENGTH_SHORT).show();
             }
         });
-
-
-
-        String strInput=input_editor.getText().toString();
-        int tempInput = Integer.parseInt(strInput);
-
-
-      **/
-
-
-
-
-
     }
 }
 

@@ -56,6 +56,9 @@ public class WebViewFrag extends Fragment implements View.OnClickListener {
         btnGo.setOnClickListener(this);
         btnFront.setOnClickListener(this);
 
+        //TODO webview code 정리
+        loadUrl(editText.getText().toString());
+
         return view;
     }
 

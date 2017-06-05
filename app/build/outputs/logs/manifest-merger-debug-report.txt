@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/AndroidManifest.xml:2:1-45:12
+ADDED from /Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from /Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/AndroidManifest.xml:3:5-44
 		INJECTED from /Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/AndroidManifest.xml
@@ -24,7 +24,7 @@ ADDED from /Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/AndroidMa
 	android:name
 		ADDED from /Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/AndroidManifest.xml:17:5-43:19
+ADDED from /Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/AndroidManifest.xml:17:5-42:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/JunHee/.android/build-cache/cc7f58883b984b5e036d2b9d7543d884c6b99b6a/output/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] /Users/JunHee/.android/build-cache/fe6e54962d2abbbb2534e8279c0f54cf875783e1/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/JunHee/.android/build-cache/2243c2ad72f1b32ca17021d2c43ae1c850483b89/output/AndroidManifest.xml:29:5-20

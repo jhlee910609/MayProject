@@ -3,6 +3,8 @@ package com.junhee.android.mayproject;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,10 +54,35 @@ public class UnitChangerFrag extends Fragment {
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         after.setAdapter(adapter2);
 
+        // ==================== [실험 로직 =====================
+
         selectedListener();
-        result_txt.setText(calculate() + "");
+        textWatcher();
+        // result_txt.setText(calculate() + "");
         return view;
     }
+
+    private void textWatcher(){
+
+        input_editor.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                double temp = Double.parseDouble(s.toString());
+                result_txt.setText((temp * beforeUnit / afterUnit) + "");
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+    }
+
 
     // 단위 변환 계산을 실행한다.
     private double calculate() {

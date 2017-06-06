@@ -34,7 +34,7 @@ public class CalFrag extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_cal, container, false);
         txt_output = (TextView) view.findViewById(R.id.output);
         txt_preview = (TextView) view.findViewById(R.id.preview);
-
+        // TODO View 정리하는 법.
         view.findViewById(R.id.btnOne).setOnClickListener(this);
         view.findViewById(R.id.btnTwo).setOnClickListener(this);
         view.findViewById(R.id.btnThree).setOnClickListener(this);

@@ -3453,9 +3453,9 @@ containing a value of this type.
         public static final int beginning=0x7f0e003f;
         public static final int bottom=0x7f0e002e;
         public static final int btnBack=0x7f0e00b1;
+        public static final int btnClean=0x7f0e008c;
         public static final int btnClear=0x7f0e00a6;
         public static final int btnDiv=0x7f0e00a9;
-        public static final int btnDoCal=0x7f0e008c;
         public static final int btnEight=0x7f0e009e;
         public static final int btnEqual=0x7f0e00a8;
         public static final int btnFive=0x7f0e00ab;

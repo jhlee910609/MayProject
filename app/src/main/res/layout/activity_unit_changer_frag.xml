@@ -65,7 +65,7 @@
             android:ems="10"
             android:gravity="center"
             android:hint="input the value"
-            android:inputType="number" />
+            android:inputType="number|text" />
 
         <TextView
             android:id="@+id/resutl_txt"
@@ -80,12 +80,12 @@
     </GridLayout>
 
     <Button
-        android:id="@+id/btnDoCal"
+        android:id="@+id/btnClean"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="do Calculate"
+        android:text="clean"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout" />

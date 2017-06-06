@@ -827,9 +827,9 @@ int id basic 0x7f0e0015
 int id beginning 0x7f0e003f
 int id bottom 0x7f0e002e
 int id btnBack 0x7f0e00b1
+int id btnClean 0x7f0e008c
 int id btnClear 0x7f0e00a6
 int id btnDiv 0x7f0e00a9
-int id btnDoCal 0x7f0e008c
 int id btnEight 0x7f0e009e
 int id btnEqual 0x7f0e00a8
 int id btnFive 0x7f0e00ab

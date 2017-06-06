@@ -1,6 +1,8 @@
 package com.junhee.android.mayproject;
 
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
@@ -28,7 +30,7 @@ public class UnitChangerFrag extends Fragment {
     double beforeUnit = 0;
     double afterUnit = 0;
     View view;
-    Button btnDoCal;
+    Button btnClean;
 
 
     public UnitChangerFrag() {
@@ -42,6 +44,12 @@ public class UnitChangerFrag extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.activity_unit_changer_frag, container, false);
         init();
+        btnClean.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clear();
+            }
+        });
 
 
         //TODO 예제랑 달라 문제 발생할지도 모름
@@ -62,7 +70,8 @@ public class UnitChangerFrag extends Fragment {
         return view;
     }
 
-    private void textWatcher(){
+    @TargetApi(Build.VERSION_CODES.N)
+    private void textWatcher() {
 
         input_editor.addTextChangedListener(new TextWatcher() {
             @Override
@@ -72,7 +81,8 @@ public class UnitChangerFrag extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                double temp = Double.parseDouble(s.toString());
+                // double 기본 표기가 지수 표현식으로 되서 10진수로 바꿔주는 작업을 한 번 더 거침
+                int temp = Integer.parseInt(s.toString());
                 result_txt.setText((temp * beforeUnit / afterUnit) + "");
             }
 
@@ -91,17 +101,23 @@ public class UnitChangerFrag extends Fragment {
         return result;
     }
 
-    // 변수와 뷰를 연결하는 초기화를 한다.
+    // 변수와 뷰를 연결하는 초기화를 하는 메소드.
     public void init() {
         before = (Spinner) view.findViewById(R.id.spin_before);
         after = (Spinner) view.findViewById(R.id.spin_after);
         input_editor = (EditText) view.findViewById(R.id.edit_input);
         result_txt = (TextView) view.findViewById(R.id.resutl_txt);
-        btnDoCal = (Button) view.findViewById(R.id.btnDoCal);
+        btnClean = (Button) view.findViewById(R.id.btnClean);
     }
 
-    // 스피너의 .setOnItemSelectedListener 를 관리한다
-    public void selectedListener() {
+    private void clear() {
+        // TODO editText 사용 시, xml 상의 input type 확인 잘할 것
+        // 맞지 않으면 에러 발생
+        input_editor.setText(0 + "");
+    }
+
+    // 스피너의 .setOnItemSelectedListener 관리하는 메서드
+    private void selectedListener() {
 
         before.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

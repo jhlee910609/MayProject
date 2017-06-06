@@ -42,8 +42,6 @@ public class GalleryFrag extends Fragment {
         recycler.setAdapter(adapter);
         recycler.setLayoutManager(new GridLayoutManager(view.getContext(), 3));
 
-
-
         return view;
     }
 

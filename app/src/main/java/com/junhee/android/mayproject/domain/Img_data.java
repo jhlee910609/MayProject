@@ -11,7 +11,7 @@ public class Img_data {
     String imageName;
     int resId;
 
-    public void setImage(String imageName, Context context){
+    public void setImage(String imageName, Context context) {
         this.imageName = imageName;
         resId = context.getResources().getIdentifier(imageName, "mipmap", context.getPackageName());
     }

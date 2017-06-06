@@ -6,13 +6,13 @@
     density="560dpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1496748508216"
+    timestamp="1496756766213"
     token="1923350945536307222"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="214" />
+        duration="233" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -21,7 +21,7 @@
         duration="17" />
     <task
         name="verifier"
-        duration="6" />
+        duration="1" />
 
     <artifact
         location="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -70,15 +70,37 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1496748351107"
+        timestamp="1496753517100"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1496753760189"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1496755374130"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1496748508216"
+        timestamp="1496756766213"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/split-apk/debug/slices/slice_1.apk"

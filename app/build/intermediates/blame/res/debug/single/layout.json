@@ -192,6 +192,10 @@
         "source": "/Users/JunHee/.android/build-cache/fe6e54962d2abbbb2534e8279c0f54cf875783e1/output/res/layout/design_layout_snackbar.xml"
     },
     {
+        "merged": "/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/res/merged/debug/layout/activity_detail.xml",
+        "source": "/Users/JunHee/AndroidStudioProjects/MayProject/app/src/main/res/layout/activity_detail.xml"
+    },
+    {
         "merged": "/Users/JunHee/AndroidStudioProjects/MayProject/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
         "source": "/Users/JunHee/.android/build-cache/fe6e54962d2abbbb2534e8279c0f54cf875783e1/output/res/layout/design_navigation_item_separator.xml"
     },
